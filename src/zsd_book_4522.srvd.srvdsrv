@@ -1,0 +1,5 @@
+@EndUserText.label: 'Definicion de servicio de Libros'
+define service ZSD_BOOK_4522 {
+  expose ZC_BOOKS_4522       as Books;
+  expose ZC_clients_log_4522 as Clients;
+}

@@ -10,7 +10,7 @@ define view entity ZC_clients_log_4522
 {
 
   key RelCliLib.id_libro  as BookId,
-  key Clients.id_cliente  as ClientsID,
+  key Clients.id_cliente  as ClientID,
   key Clients.tipo_acceso as AccessType,
       Clients.nombre      as Name,
       Clients.apellidos   as Surname,

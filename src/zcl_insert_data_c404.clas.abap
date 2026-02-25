@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_insert_data_c404 IMPLEMENTATION.
+CLASS ZCL_INSERT_DATA_C404 IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.
