@@ -4,13 +4,13 @@
 @Metadata.ignorePropagatedAnnotations: true
 @Metadata.allowExtensions: true
 define view entity ZC_BOOKS_4522
+
   as select from    ztb_libros_4522         as Books
-
-    inner join      ztb_catego_4522         as Categ on Books.bi_categ = Categ.bi_categ
-
-    left outer join ZC_CLINTS_LIBS_LOG_C404 as Sales on Books.id_libro = Sales.BookID
+        inner join      ztb_catego_4522         as Categ on Books.bi_categ = Categ.bi_categ
+        left outer join ZC_CLINTS_LIBS_LOG_C404 as Sales on Books.id_libro = Sales.BookID
 
   association [0..*] to ZC_clients_log_4522 as _Clients on $projection.BookId = _Clients.BookId
+  
 {
   key Books.id_libro    as BookId,
       Books.titulo      as Title,

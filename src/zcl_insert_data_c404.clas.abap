@@ -33,14 +33,14 @@ CLASS ZCL_INSERT_DATA_C404 IMPLEMENTATION.
 ******** ZTB_ACC_CAT_4522 ********
     "fill internal table
     lt_acc_categ = value #(
-    ( bi_categ ='A' tipo_acceso ='1' )
-    ( bi_categ ='B' tipo_acceso ='1' )
-    ( bi_categ ='C' tipo_acceso ='2' )
-    ( bi_categ ='D' tipo_acceso ='2' )
-    ( bi_categ ='E' tipo_acceso ='2' )
-    ( bi_categ ='F' tipo_acceso ='3' )
-    ( bi_categ ='G' tipo_acceso ='3' )
-    ( bi_categ ='H' tipo_acceso ='4' ) ).
+    ( bi_categ = 'A' tipo_acceso = '1' )
+    ( bi_categ = 'B' tipo_acceso = '1' )
+    ( bi_categ = 'C' tipo_acceso = '2' )
+    ( bi_categ = 'D' tipo_acceso = '2' )
+    ( bi_categ = 'E' tipo_acceso = '2' )
+    ( bi_categ = 'F' tipo_acceso = '3' )
+    ( bi_categ = 'G' tipo_acceso = '3' )
+    ( bi_categ = 'H' tipo_acceso = '4' ) ).
 
     "Delete possible entries; insert new entries
     delete from ZTB_ACC_CAT_4522.
@@ -53,14 +53,14 @@ CLASS ZCL_INSERT_DATA_C404 IMPLEMENTATION.
 ******** ZTB_CATEGO_4522 ********
     "fill internal table
     lt_catego = value #(
-    ( bi_categ ='A' descripcion ='Filosofía, psicología')
-    ( bi_categ ='B' descripcion ='Religión, mitología')
-    ( bi_categ ='C' descripcion ='Ciencias sociales (derecho, política, economía)')
-    ( bi_categ ='D' descripcion ='Ciencias naturales (matemáticas, astronomía, física)')
-    ( bi_categ ='E' descripcion ='Ciencias aplicadas (tecnología, informática)')
-    ( bi_categ ='F' descripcion ='Arte, música, deporte')
-    ( bi_categ ='G' descripcion ='Lengua, poesía, teatro')
-    ( bi_categ ='H' descripcion ='Geografía, historia') ).
+    ( bi_categ = 'A' descripcion = 'Filosofía, psicología' )
+    ( bi_categ = 'B' descripcion = 'Religión, mitología' )
+    ( bi_categ = 'C' descripcion = 'Ciencias sociales (derecho, política, economía)' )
+    ( bi_categ = 'D' descripcion = 'Ciencias naturales (matemáticas, astronomía, física)' )
+    ( bi_categ = 'E' descripcion = 'Ciencias aplicadas (tecnología, informática)' )
+    ( bi_categ = 'F' descripcion = 'Arte, música, deporte' )
+    ( bi_categ = 'G' descripcion = 'Lengua, poesía, teatro' )
+    ( bi_categ = 'H' descripcion = 'Geografía, historia' ) ).
 
     "Delete possible entries; insert new entries
     delete from ZTB_CATEGO_4522.

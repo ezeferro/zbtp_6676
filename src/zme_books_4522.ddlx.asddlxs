@@ -19,27 +19,30 @@ annotate entity ZC_BOOKS_4522 with
 
   @UI: {
         facet : [
-                 { id: 'DetallesLibro',
-                   label : 'Detalles del Libro',
-                   type: #COLLECTION,
-                   position: 10},
+                   { id: 'DetallesLibro',
+                     label : 'Detalles del Libro',
+                     type: #COLLECTION,
+                     position: 10 } ,
 
                    { id: 'Libro',
-                   parentId: 'DetallesLibro',
-                   label : 'Detalles',
-                   type: #FIELDGROUP_REFERENCE,
-                   targetQualifier: 'DetallesLibro',
-                   position: 10},
+                     parentId: 'DetallesLibro',
+                     label : 'Detalles',
+                     type: #FIELDGROUP_REFERENCE,
+                     targetQualifier: 'DetallesLibro',
+                     position: 10 } 
+                     ,
 
                    { id: 'Compradores',
-                   label : 'Compradores',
-                   type: #LINEITEM_REFERENCE,
-                   targetElement: '_Clients',
-                   position: 30}],
+                     label : 'Compradores',
+                     type: #LINEITEM_REFERENCE,
+                     targetElement: '_Clients',
+                     position: 30 } 
+                 ]
 
-          fieldGroup: [{ qualifier: 'DetallesLibro',
-                         position: 10 }]
     }
+    
+   @UI: { fieldGroup: [{ qualifier: 'DetallesLibro',
+                        position: 10}]}   
   BookId;
 
   @UI: { lineItem: [{ position: 10,
@@ -77,17 +80,17 @@ annotate entity ZC_BOOKS_4522 with
   @UI: { lineItem: [{ position: 70,
                       label: 'Ventas',
                       importance: #HIGH,
-                      value: 'Description',
+                      value: 'Sales',
                       criticality: 'Sales' }]}
   Sales;
   @UI: { fieldGroup: [{ qualifier: 'DetallesLibro',
-                        position: 30}]}
+                        position: 75}]}
   Description;
 
-  @UI: { lineItem: [{ position: 80,
-                      importance: #HIGH,
-                      criticality: 'Sales' }]}
+//  @UI: { lineItem: [{ position: 80,
+//                      importance: #HIGH,
+//                      criticality: 'Sales' }]}
   /* Associations */
-  _Clients;
+//  _Clients;
 
 }
