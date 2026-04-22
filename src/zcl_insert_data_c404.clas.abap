@@ -1,4 +1,4 @@
-CLASS zcl_insert_data_c404 DEFINITION
+CLASS zcl_insert_data_c404_6676 DEFINITION
   PUBLIC
   FINAL
   CREATE PUBLIC .
